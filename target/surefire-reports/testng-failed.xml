@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="tests.NewProjectTestNG">
+        <methods>
+          <include name="failedTest"/>
+          <include name="tc01_login"/>
+          <include name="tc04_rename"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.NewProjectTestNG -->
+      <class name="tests.CreatesTestNG">
+        <methods>
+          <include name="tc05_newCouponsList2"/>
+          <include name="tc02_createProject"/>
+          <include name="failedTest"/>
+          <include name="tc03_createProject2"/>
+          <include name="tc04_newCouponsList"/>
+          <include name="tc01_login"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CreatesTestNG -->
+      <class name="tests.LoginTestNG">
+        <methods>
+          <include name="tc01_loginFailedData"/>
+          <include name="tc03_loginFailed"/>
+          <include name="failedTest"/>
+          <include name="tc02_loginSecceed"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.LoginTestNG -->
+      <class name="tests.ForgetPasswordTestNG">
+        <methods>
+          <include name="tc01_forgetPassword"/>
+          <include name="failedTest"/>
+          <include name="tc02_forgetPassword2"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.ForgetPasswordTestNG -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
